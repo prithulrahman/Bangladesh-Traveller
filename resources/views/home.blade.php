@@ -1,105 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BangladeshTravellers.com</title>
-  <link rel="stylesheet" href="{{ asset("css/styles.css") }}" />
-</head>
-<body>
-    <!-- <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    </style> -->
-    <nav class="navbar">
-        <div class="navbar-left">
-            <span class="logo-text">Bangladesh Travellers</span>
-            <img src="{{ asset("images/BDTravellers.png") }}" alt="Logo" class="logo-img">
-        </div>
-        <div class="navbar-center">
-            <a href="index.html">Home</a>
-            <a href="#">Historical Places</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Services</a>
-        </div>
-        <div class="navbar-right">
-            <a href="Signup.html"><button>Signup</button></a>
-            <a href="Registration.html"><button>Register</button></a>
+<x-app-layout>
 
-                    <!-- Reward Points Counter -->
-            <div class="reward-widget">
-                <span class="reward-icon">⭐</span>
-                <span class="reward-points" id="rewardPoints">0</span>
-                <span class="reward-label">Points</span>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen bg-cover bg-center flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-20 before:absolute before:inset-0 before:bg-black before:opacity-30" style="background-image: url('{{ asset("images/person-traveling-enjoying-their-vacation.jpg") }}');" id="page1">
+        <div class="relative z-10 flex flex-col items-center justify-center text-center max-w-4xl">
+            <div class="mb-4 sm:mb-6 inline-block">
+                <p class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg">Welcome to</p>
+                <p class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 drop-shadow-lg mt-2">Bangladesh Travellers</p>
             </div>
-        
-                <!-- User Profile Logo -->
-            <div class="user-profile">
-                    <img src="{{ asset("images/Sachin.jpg") }}" alt="User Profile" class="profile-img" id="profileImg" />
-                <div class="profile-dropdown" id="profileDropdown">
-                    <a href="Profile.html" class="dropdown-item">View Profile</a>
-                    <a href="#settings" class="dropdown-item">Settings</a>
-                    <a href="#logout" class="dropdown-item logout">Logout</a>
-                </div>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg mb-4 sm:mb-6 lg:mb-8">Explore Bangladesh</h1>
+            <p class="text-base sm:text-lg md:text-xl text-white drop-shadow-md mb-8 sm:mb-10 lg:mb-12 px-2">Discover the most beautiful and historical destinations across the country</p>
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
+                <button class="px-6 sm:px-8 lg:px-10 py-3 sm:py-4 text-sm sm:text-base lg:text-lg font-bold border-none rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 text-white cursor-pointer transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:from-blue-700 hover:to-blue-800">🗺️ Explore by District</button>
+                <button class="px-6 sm:px-8 lg:px-10 py-3 sm:py-4 text-sm sm:text-base lg:text-lg font-bold border-none rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white cursor-pointer transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:from-cyan-600 hover:to-blue-700">🌍 Explore by Region</button>
             </div>
-
-        </div>
-    </nav>
-
-    <section class="page" id="page1">
-        <!-- <img src="images/person-traveling-enjoying-their-vacation.jpg" alt="Background" class="bg-img"> -->
-        <p><blockquote>Welcome to BangladeshTravellers.com</blockquote></p>
-        <h1>Explore Bangladesh</h1>
-        <div class="options">
-            <button class="option-btn">District</button>
-            <button class="option-btn">Region</button>
         </div>
     </section>
 
-
-    <footer class="footer-container">
-        <!-- Left Section: Logo -->
-        <div class="footer-section footer-logo">
-            <div class="footer-logo-text">BangladeshTravellers</div>
-        </div>
-
-        <!-- Middle Section: Contact Info -->
-        <div class="footer-section footer-contact">
-            <div class="contact-item">
-                <span class="contact-icon">📞</span>
-                <span class="contact-text">+8801705712769</span>
-            </div>
-            <div class="contact-item">
-                <span class="contact-icon">🏠</span>
-                <span class="contact-text">Sector #07, Road #02, Uttara, Dhaka</span>
-            </div>
-            <div class="contact-item">
-                <span class="contact-icon">✉️</span>
-                <span class="contact-text">jarifrahman444@gmail.com</span>
-            </div>
-        </div>
-
-        <!-- Right Section: Important Links -->
-        <div class="footer-section footer-links">
-            <ul class="footer-link-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#howitworks">How it Works</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-            </ul>
-        </div>
-
-        <!-- Copyright -->
-        <div class="footer-copyright">
-            <p>&copy; 2025 BangladeshTravellers.com | All Rights Reserved</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+</x-app-layout>
