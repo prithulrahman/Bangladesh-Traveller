@@ -14,11 +14,10 @@
         <!-- Desktop Navigation -->
         <div class="hidden lg:flex gap-6 xl:gap-8 items-center">
             <a href="{{ route('home') }}" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Home</a>
-            <a href="#" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Historical Places</a>
-            <a href="#" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">About Us</a>
-            <a href="#" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Contact Us</a>
-            <a href="#" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Services</a>
-        </div>
+            <a href="{{ route('historical-places') }}" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Historical Places</a>
+            <a href="{{ route('about') }}" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">About Us</a>
+            <a href="{{ route('services') }}" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Services</a>
+            <a href="{{ route('contact') }}" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Contact Us</a>
         
         <!-- Right Section -->
         <div class="flex gap-1.5 sm:gap-2 lg:gap-3 items-center">
@@ -55,10 +54,10 @@
     <div id="mobileMenu" class="hidden lg:hidden fixed top-20 left-0 right-0 bg-white shadow-lg border-b border-blue-100 z-40">
         <div class="flex flex-col">
             <a href="index.html" class="px-6 py-3 text-slate-700 text-base font-medium no-underline transition-all duration-300 border-b border-slate-100 hover:bg-blue-50 hover:text-blue-600">🏠 Home</a>
-            <a href="#" class="px-6 py-3 text-slate-700 text-base font-medium no-underline transition-all duration-300 border-b border-slate-100 hover:bg-blue-50 hover:text-blue-600">🏛️ Historical Places</a>
-            <a href="#" class="px-6 py-3 text-slate-700 text-base font-medium no-underline transition-all duration-300 border-b border-slate-100 hover:bg-blue-50 hover:text-blue-600">ℹ️ About Us</a>
-            <a href="#" class="px-6 py-3 text-slate-700 text-base font-medium no-underline transition-all duration-300 border-b border-slate-100 hover:bg-blue-50 hover:text-blue-600">📞 Contact Us</a>
-            <a href="#" class="px-6 py-3 text-slate-700 text-base font-medium no-underline transition-all duration-300 border-b border-slate-100 hover:bg-blue-50 hover:text-blue-600">⭐ Services</a>
+            <a href="{{ route('historical-places') }}" class="px-6 py-3 text-slate-700 text-base font-medium no-underline transition-all duration-300 border-b border-slate-100 hover:bg-blue-50 hover:text-blue-600">🏛️ Historical Places</a>
+            <a href="{{ route('about') }}" class="px-6 py-3 text-slate-700 text-base font-medium no-underline transition-all duration-300 border-b border-slate-100 hover:bg-blue-50 hover:text-blue-600">ℹ️ About Us</a>
+            <a href="{{ route('services') }}" class="px-6 py-3 text-slate-700 text-base font-medium no-underline transition-all duration-300 border-b border-slate-100 hover:bg-blue-50 hover:text-blue-600">⭐ Services</a>
+            <a href="{{ route('contact') }}" class="px-6 py-3 text-slate-700 text-base font-medium no-underline transition-all duration-300 border-b border-slate-100 hover:bg-blue-50 hover:text-blue-600">📞 Contact Us</a>
             <div class="px-6 py-3 flex gap-2">
                 <a href="Signup.html" class="flex-1"><button class="w-full px-4 py-2 text-sm font-semibold border-none rounded-lg bg-white text-blue-600 border-2 border-blue-600 cursor-pointer transition-all duration-300 hover:bg-blue-50">Sign up</button></a>
             </div>

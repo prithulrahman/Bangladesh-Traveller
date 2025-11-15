@@ -1,4 +1,4 @@
-<footer class="bg-gradient-to-b from-zinc-900 to-zinc-950 text-slate-100 border-t-2 border-stone-600">
+<footer class="bg-gradient-to-b from-zinc-900 to-zinc-950 text-slate-100 border-t-2 border-blue-600">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 lg:gap-12">
         <!-- Brand Section -->
         <div class="lg:col-span-1">
