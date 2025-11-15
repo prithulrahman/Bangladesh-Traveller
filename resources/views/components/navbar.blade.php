@@ -1,17 +1,19 @@
 <div>
     <!-- Navbar -->
     <nav class="sticky top-0 z-50 flex items-center justify-between bg-white shadow-lg px-4 sm:px-6 lg:px-8 py-3 sm:py-2 border-b border-blue-100">
-        <div class="flex items-center gap-2 sm:gap-4">
-            <img src="{{ asset("images/BDTravellers.png") }}" alt="Logo" class="w-10 h-10 sm:w-14 sm:h-14 object-cover rounded-lg shadow-md">
-            <div class="hidden sm:block">
-                <h1 class="text-lg sm:text-2xl font-bold text-blue-600">Bangladesh Travellers</h1>
-                <p class="text-xs text-slate-500 font-medium">Explore Your Journey</p>
+        <a href="{{ route('home') }}">
+            <div class="flex items-center gap-2 sm:gap-4">
+                <img src="{{ asset("images/BDTravellers.png") }}" alt="Logo" class="w-10 h-10 sm:w-14 sm:h-14 object-cover rounded-lg shadow-md">
+                <div class="hidden sm:block">
+                    <h1 class="text-lg sm:text-2xl font-bold text-blue-600">Bangladesh Travellers</h1>
+                    <p class="text-xs text-slate-500 font-medium">Explore Your Journey</p>
+                </div>
             </div>
-        </div>
+        </a>
         
         <!-- Desktop Navigation -->
         <div class="hidden lg:flex gap-6 xl:gap-8 items-center">
-            <a href="index.html" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Home</a>
+            <a href="{{ route('home') }}" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Home</a>
             <a href="#" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Historical Places</a>
             <a href="#" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">About Us</a>
             <a href="#" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Contact Us</a>

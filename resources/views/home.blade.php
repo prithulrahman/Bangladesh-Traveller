@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Home">
 
     <!-- Hero Section -->
     <section class="relative min-h-screen bg-cover bg-center flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-20 before:absolute before:inset-0 before:bg-black before:opacity-30" style="background-image: url('{{ asset("images/person-traveling-enjoying-their-vacation.jpg") }}');" id="page1">
