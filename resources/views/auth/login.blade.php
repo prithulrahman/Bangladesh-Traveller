@@ -19,7 +19,7 @@
                 <!-- Form Header Accent Bar -->
                 <div class="h-2 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-500"></div>
 
-                <form action="/login" method="post" autocomplete="off" class="p-8 space-y-6">
+                <form action="{{ route('login') }}" method="post" autocomplete="off" class="p-8 space-y-6">
                     @csrf
                     <!-- Email Address -->
                     <div>
@@ -27,17 +27,23 @@
                         <div class="relative group">
                             <input type="email" id="email" name="email" required placeholder="you@example.com" class="w-full px-5 py-3 border-2 border-slate-300 rounded-xl bg-white focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all placeholder-slate-500 text-slate-900 font-medium group-hover:border-slate-400">
                         </div>
+                        @error('email')
+                            <span class="text-red-600">{{ $message }}</span>
+                        @enderror
                     </div>
 
                     <!-- Password -->
                     <div>
                         <div class="flex justify-between items-center mb-3">
                             <label for="password" class="block text-sm font-bold text-slate-800">Password</label>
-                            <a href="#" class="text-sm font-semibold text-blue-600 hover:text-blue-700 hover:underline transition-all">Forgot password?</a>
+                            {{-- <a href="#" class="text-sm font-semibold text-blue-600 hover:text-blue-700 hover:underline transition-all">Forgot password?</a> --}}
                         </div>
                         <div class="relative group">
                             <input type="password" id="password" name="password" required placeholder="••••••••" class="w-full px-5 py-3 border-2 border-slate-300 rounded-xl bg-white focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all placeholder-slate-500 text-slate-900 font-medium group-hover:border-slate-400">
                         </div>
+                        @error('password')
+                            <span class="text-red-600">{{ $message }}</span>
+                        @enderror
                     </div>
 
                     <!-- Remember Me -->

@@ -3,7 +3,7 @@
     <nav class="sticky top-0 z-50 flex items-center justify-between bg-white shadow-lg px-4 sm:px-6 lg:px-8 py-3 sm:py-2 border-b border-blue-100">
         <a href="{{ route('home') }}">
             <div class="flex items-center gap-2 sm:gap-4">
-                <img src="{{ asset("images/BDTravellers.png") }}" alt="Logo" class="w-10 h-10 sm:w-14 sm:h-14 object-cover rounded-lg shadow-md">
+                <img src="{{ asset("images/BDTravellers.png") }}" alt="Logo" class="w-12 h-10 sm:w-20 sm:h-14 object-cover rounded-lg shadow-md">
                 <div class="hidden sm:block">
                     <h1 class="text-lg sm:text-2xl font-bold text-blue-600">Bangladesh Travellers</h1>
                     <p class="text-xs text-slate-500 font-medium">Explore Your Journey</p>
@@ -31,7 +31,7 @@
             @auth
                 <!-- User Profile Logo -->
                 <div class="relative cursor-pointer group">
-                    <img src="{{ asset("images/Sachin.jpg") }}" alt="User Profile" class="w-9 h-9 sm:w-11 sm:h-11 rounded-full border-2 border-blue-300 transition-all duration-300 object-cover shadow-sm group-hover:shadow-lg group-hover:border-blue-500" id="profileImg" />
+                    <img src="{{ asset('storage/' . Auth::user()->profile_picture_path) }}" alt="User Profile" class="w-9 h-9 sm:w-11 sm:h-11 rounded-full border-2 border-blue-300 transition-all duration-300 object-cover shadow-sm group-hover:shadow-lg group-hover:border-blue-500" id="profileImg" />
                     <div class="absolute top-12 sm:top-14 right-0 bg-white rounded-lg shadow-xl z-50 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-44 sm:min-w-48 border border-slate-200">
                         <a href="{{ route('profile.view') }}" class="block px-4 sm:px-5 py-2.5 sm:py-3 text-slate-700 no-underline text-xs sm:text-sm font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600 border-l-4 border-transparent hover:border-l-blue-600">👤 View Profile</a>
                         <a href="{{ route('profile.edit') }}" class="block px-4 sm:px-5 py-2.5 sm:py-3 text-slate-700 no-underline text-xs sm:text-sm font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600 border-l-4 border-transparent hover:border-l-blue-600">⚙️ Settings</a>
