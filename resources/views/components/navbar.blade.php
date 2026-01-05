@@ -18,7 +18,7 @@
             <a href="{{ route('about') }}" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">About Us</a>
             <a href="{{ route('services') }}" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Services</a>
             <a href="{{ route('contact') }}" class="text-slate-700 text-sm lg:text-base font-medium no-underline transition-all duration-300 hover:text-blue-600 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">Contact Us</a>
-        
+        </div>
         <!-- Right Section -->
         <div class="flex gap-1.5 sm:gap-2 lg:gap-3 items-center">
             <!-- Reward Points Counter -->
