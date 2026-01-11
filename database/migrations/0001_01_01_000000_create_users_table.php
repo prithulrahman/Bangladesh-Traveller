@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('last_name')->nullable();
             $table->string('email')->unique();
             $table->string('username')->unique();
+            $table->tinyInteger('is_admin')->default(0);
             $table->string('phone')->unique();
             $table->date('dob');
             $table->text('bio');

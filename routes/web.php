@@ -54,4 +54,16 @@ Route::get('/explore', function () {
     ]);
 })->name('explore');
 
+
+
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin']], function () {
+    Route::get('/', function () {
+        return view('admin.dashboard');
+    })->name('admin.dashboard');
+
+    Route::resource('divisions', DivisionController::class);
+    Route::resource('districts', DistrictController::class);
+});
+
+
 require __DIR__.'/auth.php';
