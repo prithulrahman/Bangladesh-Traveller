@@ -74,7 +74,7 @@
             <p class="text-sm text-slate-300 mb-4">Subscribe to get the latest travel updates and exclusive offers.</p>
             <form class="space-y-3">
                 <input type="email" placeholder="Your email" class="w-full px-4 py-2.5 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all duration-300">
-                <button type="submit" class="w-full px-4 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50">Subscribe</button>
+                <button type="submit" class="w-full px-4 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300">Subscribe</button>
             </form>
         </div>
     </div>

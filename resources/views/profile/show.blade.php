@@ -8,8 +8,8 @@
                     <div class="lg:w-72 flex flex-col gap-6 items-start">
                         <!-- Avatar -->
                         <div class="w-full">
-                            @if(Auth::user()->profile_picture)
-                                <img src="{{ asset('storage/' . Auth::user()->profile_picture) }}" alt="Profile Picture" class="w-full aspect-[9/11] rounded-2xl object-cover border border-slate-300 shadow-lg">
+                            @if(Auth::user()->profile_picture_path)
+                                <img src="{{ asset('storage/' . Auth::user()->profile_picture_path) }}" alt="Profile Picture" class="w-full aspect-[9/11] rounded-2xl object-cover border border-slate-300 shadow-lg">
                             @else
                                 <div class="w-full aspect-[9/11] rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center shadow-lg border border-slate-300">
                                     <span class="text-6xl font-black text-white">{{ substr(Auth::user()->first_name, 0, 1) }}</span>
@@ -62,13 +62,13 @@
                                 <!-- Date of Birth -->
                                 <div>
                                     <label class="text-xs font-semibold text-slate-600 uppercase tracking-wide">Date of Birth</label>
-                                    <div class="mt-2 px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 font-semibold">{{ Auth::user()->dob ? Auth::user()->dob->format('Y-m-d') : 'Not provided' }}</div>
+                                    <div class="mt-2 px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 font-semibold">{{ Auth::user()->dob ? \Carbon\Carbon::parse(Auth::user()->dob)->format('M d, Y') : 'Not provided' }}</div>
                                 </div>
 
                                 <!-- Account Created -->
                                 <div>
                                     <label class="text-xs font-semibold text-slate-600 uppercase tracking-wide">Member Since</label>
-                                    <div class="mt-2 px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 font-semibold">{{ Auth::user()->created_at->format('M d, Y') }}</div>
+                                    <div class="mt-2 px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 font-semibold">{{ \Carbon\Carbon::parse(Auth::user()->created_at)->format('M d, Y') }}</div>
                                 </div>
                             </div>
                         </div>

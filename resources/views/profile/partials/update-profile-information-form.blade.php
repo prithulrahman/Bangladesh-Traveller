@@ -71,7 +71,7 @@
         <!-- Date of Birth -->
         <div>
             <label for="dob" class="block text-sm font-bold text-slate-800 mb-2">Date of Birth</label>
-            <input id="dob" name="dob" type="date" class="w-full px-4 py-3 border-2 border-slate-300 rounded-xl bg-slate-50 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all text-slate-900 font-medium" value="{{ old('dob', $user->dob?->format('Y-m-d')) }}" />
+            <input id="dob" name="dob" type="date" class="w-full px-4 py-3 border-2 border-slate-300 rounded-xl bg-slate-50 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all text-slate-900 font-medium" value="{{ old('dob', $user->dob) }}" />
             @error('dob')
                 <p class="text-red-500 text-sm mt-2">{{ $message }}</p>
             @enderror

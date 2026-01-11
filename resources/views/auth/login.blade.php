@@ -53,7 +53,7 @@
                     </div>
 
                     <!-- Submit Button -->
-                    <button type="submit" class="w-full mt-8 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold py-3 rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105 active:scale-95">
+                    <button type="submit" class="w-full mt-8 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold py-3 rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-102">
                         Sign In
                     </button>
 

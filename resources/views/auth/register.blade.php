@@ -107,6 +107,7 @@
 
                         <label for="profile_picture" class="sr-only">Choose file</label>
                         <input type="file" name="profile_picture" id="profile_picture" 
+                            accept="image/*"
                             class="block shadow-sm rounded-lg text-sm 
                             focus:z-10 focus:border-blue-200 focus:ring-blue-200 focus:ring-1 bg-slate-200 
                             disabled:opacity-50 disabled:pointer-events-none
